@@ -1616,7 +1616,7 @@
   @media (min-width: 768px) and (max-width: 1023px) { /*Tablet Version*/
     
     .slider { 
-      width: 400px;  /* Max width for this container*/
+      width: 350px;  /* Max width for this container*/
       height: 300px; /* Max height for this container*/
       border-radius: 10px;
       overflow: hidden;
@@ -1625,7 +1625,7 @@
     }
 
     .slide img {
-      width: 400px;    /* This width has the match the width of the .slider width in order to fill up properly and leave no space */
+      width: 350px;    /* This width has the match the width of the .slider width in order to fill up properly and leave no space */
       height: 300px;
       object-fit: cover;
 
@@ -1633,7 +1633,7 @@
 
     .navigation-manual {
       position: absolute;
-      width: 400px; /*Must match .slider width in order for dots to be aligned */
+      width: 350px; /*Must match .slider width in order for dots to be aligned */
       margin-top: -180px; /*Makes the dots move up and down*/
       display: flex;
       justify-content: center;
@@ -1644,7 +1644,7 @@
     .navigation-auto {
       position:absolute;
     display: flex;
-    width: 400px; /*must match slider width in order for dots to match*/
+    width: 350px; /*must match slider width in order for dots to match*/
     justify-content: center;
     margin-top: 320px;
 
@@ -1660,7 +1660,7 @@
 
 
     .Justin {
-      left: -215px;
+      left: -195px;
       top: -50px;
     }
 
@@ -1874,8 +1874,101 @@
 
   }
 
+  @media(min-height:900px) and (max-height:1036px) { /*IPAD*/
+    .about-content{
+      position: relative;
+      top: -850px;
+      width: 380px;
+    }
+    .Justin {
+      top: -200px;
+      left: -190px;
+    }
+
+    .slider { 
+      width: 350px;  /* Max width for this container*/
+      height: 400px; /* Max height for this container*/
+      border-radius: 10px;
+      overflow: hidden;
+  
+  
+    }
+  
+    .slide img {
+      width: 350px;    /* This width has the match the width of the .slider width in order to fill up properly and leave no space */
+      height: 400px;
+      object-fit: cover;
+  
+    }
+  
+    .navigation-manual {
+      position: absolute;
+      width: 350px; /*Must match .slider width in order for dots to be aligned */
+      margin-top: -80px; /*Makes the dots move up and down*/
+      display: flex;
+      justify-content: center;
+  
+    }
+  
+  
+    .navigation-auto {
+      position:absolute;
+      display: flex;
+      width: 350px; /*must match slider width in order for dots to match*/
+      justify-content: center;
+      margin-top: 420px;
+  
+    }
+
+    
+
+  }
 
 
+  @media(min-height:1037px) and (max-height:1500px) { /*IPAD*/
+    .about-content{
+      position: relative;
+      top: -1050px;
+      width: 380px;
+    }
+    .Justin {
+      top: -280px;
+      left: -190px;
+    }
 
+    .slider { 
+      width: 350px;  /* Max width for this container*/
+      height: 400px; /* Max height for this container*/
+      border-radius: 10px;
+      overflow: hidden;
+  
+  
+    }
+  
+    .slide img {
+      width: 350px;    /* This width has the match the width of the .slider width in order to fill up properly and leave no space */
+      height: 400px;
+      object-fit: cover;
+  
+    }
+  
+    .navigation-manual {
+      position: absolute;
+      width: 350px; /*Must match .slider width in order for dots to be aligned */
+      margin-top: -80px; /*Makes the dots move up and down*/
+      display: flex;
+      justify-content: center;
+  
+    }
+  
+  
+    .navigation-auto {
+      position:absolute;
+      display: flex;
+      width: 350px; /*must match slider width in order for dots to match*/
+      justify-content: center;
+      margin-top: 420px;
+  
+    }
 
-
+  }
