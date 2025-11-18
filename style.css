@@ -627,42 +627,169 @@
   
 
   .cummins-logo {
-    position: relative;
-    object-fit: cover;
-    left: -60px;
-    top: -90px;
+    display: flex;
+    justify-content: center;
+    margin: 10px auto;
+  }
+
+  .dd {
+    display: flex;
+    justify-content: center;
+    margin: 10px auto;
   }
   
 
 
   .Justin {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    max-width: 100%;
+    padding: 20px;
+  }
+
+  .slider {
+    width: 100%;
+    max-width: 500px;
+    height: auto;
+    aspect-ratio: 4 / 3;
+    border-radius: 10px;
+    overflow: hidden;
+  }
+
+  .slides {
+    width: 500%;
+    height: 100%;
+    display: flex;
+  }
+
+  .slides input {
     display: none;
+  }
+
+  .slide {
+    width: 20%;
+    transition: 2s;
+  }
+
+  .slide img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  .navigation-manual {
+    position: absolute;
+    width: 100%;
+    max-width: 500px;
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+  }
+
+  .manual-btn {
+    border: 2px solid red;
+    padding: 5px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 1s;
+  }
+
+  .manual-btn:not(:last-child) {
+    margin-right: 40px;
+  }
+
+  .manual-btn:hover {
+    background: red;
+  }
+
+  #radio1:checked ~ .first {
+    margin-left: 0;
+  }
+
+  #radio2:checked ~ .first {
+    margin-left: -20%;
+  }
+
+  #radio3:checked ~ .first {
+    margin-left: -40%;
+  }
+
+  #radio4:checked ~ .first {
+    margin-left: -60%;
+  }
+
+  .navigation-auto {
+    position: absolute;
+    display: flex;
+    width: 100%;
+    max-width: 500px;
+    justify-content: center;
+    margin-top: calc(100% - 30px);
+  }
+
+  .navigation-auto div {
+    border: 2px solid red;
+    padding: 5px;
+    border-radius: 10px;
+    transition: 1s;
+  }
+
+  .navigation-auto div:not(:last-child) {
+    margin-right: 40px;
+  }
+
+  #radio1:checked ~ .navigation-auto .auto-btn1 {
+    background: red;
+  }
+
+  #radio2:checked ~ .navigation-auto .auto-btn2 {
+    background: red;
+  }
+
+  #radio3:checked ~ .navigation-auto .auto-btn3 {
+    background: red;
+  }
+
+  #radio4:checked ~ .navigation-auto .auto-btn4 {
+    background: red;
+  }
+
+  .Ozyn {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    align-items: center;
+  }
+
+  .about-content {
+    width: 100%;
+    max-width: 600px;
+    text-align: center;
   }
   
   .talent-mechanics {
-    position: relative;
-    left: -10px;
+    text-align: center;
   }
 
   #service-label {
-    position: relative;
-    left: -16px;
+    text-align: center;
   }
 
 
   .about-us-title {
-    position: relative;
-    left: -12px;
+    text-align: center;
   }
 
   #work-services {
-    position: relative;
-    left: -15px;
+    text-align: center;
   }
 
   .Peterbuilt {
-    position: relative;
-    left: 15px;
+    display: flex;
+    justify-content: center;
+    margin: 10px auto;
   }
 
   
@@ -786,204 +913,72 @@
     }
   
     .cummins-logo {
-      position: relative;
-      object-fit: cover;
-      margin-inline: auto;
-      top: -80px;
-      left: -30px;
+      display: flex;
+      justify-content: center;
+      margin: 10px auto;
     }
 
     .dd {
-      position: relative;
-      object-fit: cover;
-      left: 20px;
+      display: flex;
+      justify-content: center;
+      margin: 10px auto;
     }
 
     .Peterbuilt {
-      position: relative;
-      object-fit: cover;
-      left: 50px;
-      top: -50px;
+      display: flex;
+      justify-content: center;
+      margin: 10px auto;
     }
 
 
   /*SlideShow */
 
-  .Justin{
-    margin: 0;
-    padding: 0;
-    height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    position: relative;
-    left: -150px;
-    top: -200px;
-}
+  .slider {
+    max-width: 500px;
+  }
 
-
-
-
-.slider {
-    width: 650px;  /* Max width for this container*/
-    height: 600px; /* Max height for this container*/
-    border-radius: 10px;
-    overflow: hidden;
-    
-}
-
-
-.slides{
-    width: 500%;
-    height: 500px;
-    display: flex;
-
-}
-
-.slides input {
-    display: none;
-
-}
-
-
-
-.slide {
-    width: 20%;
-    transition: 2s;
-
-}
-
-
-.slide img {
-    width: 650px;    /* This width has the match the width of the .slider width in order to fill up properly and leave no space */
-    height: 600px;
+  .slide img {
+    width: 100%;
+    height: 100%;
     object-fit: cover;
-}
+  }
 
+  .navigation-manual {
+    max-width: 500px;
+    margin-top: 10px;
+  }
 
+  .navigation-auto {
+    max-width: 500px;
+    margin-top: calc(100% - 30px);
+  }
 
-.navigation-manual {
-    position: absolute;
-    width: 650px; /*Must match .slider width in order for dots to be aligned */
-    margin-top: 70px; /*Makes the dots move up and down*/
-    display: flex;
-    justify-content: center;
-}
+  .Ozyn {
+    flex-direction: row;
+    align-items: flex-start;
+    gap: 40px;
+  }
 
+  .about-content {
+    text-align: left;
+    flex: 1;
+  }
 
-.manual-btn {
-    border:2px solid red;
-    padding: 5px; 
-    border-radius: 10px;
-    cursor: pointer;
-    transition: 1s;
-}
+  .Justin {
+    flex: 1;
+  }
 
+  .section-subtitle {
+    margin-inline: 0;
+  }
 
-.manual-btn:not(:last-child) {
-    margin-right: 40px;
-}
+  .about {
+    min-height: auto;
+  }
 
-.manual-btn:hover {
-    background: red;
-}
-
-
-#radio1:checked ~ .first {
-    margin-left: 0;
-}
-
-
-#radio2:checked ~ .first {
-    margin-left: -20%;
-}
-
-
-#radio3:checked ~ .first {
-    margin-left: -40%;
-}
-
-
-#radio4:checked ~ .first {
-    margin-left: -60%;
-}
-
-.navigation-auto{
-  position:absolute;
-  display: flex;
-  width: 650px; /*must match slider width in order for dots to match*/
-  justify-content: center;
-  margin-top: 571px;
-}
-
-
-.navigation-auto div{
-  border:2px solid red;
-  padding:5px;
-  border-radius: 10px;
-  transition: 1s;
-}
-
-.navigation-auto div:not(:last-child) {
-  margin-right: 40px;
-}
-
-
-
-#radio1:checked ~ .navigation-auto .auto-btn1 {
-  background: red;
-}
-
-
-#radio2:checked ~ .navigation-auto .auto-btn2 {
-  background: red;
-}
-
-
-
-#radio3:checked ~ .navigation-auto .auto-btn3 {
-  background: red;
-}
-
-
-
-#radio4:checked ~ .navigation-auto .auto-btn4 {
-  background: red;
-}
-
-.about-content { /*Added for About content */
-  position: relative;
-  left: 600px;
-  top: -1020px;
-}
-
-.section-subtitle { /*Added*/
-  position: relative;
-  left: 220px;
-}
-
-
-.about { /*Added*/
-  height: 1000px;
-}
-
-
-.section-subtitle#work-label { /*Added*/
-  position: relative;
-  left: -6px;
-}
-
-
-#service-label { /* Our Services Title*/
-  position: relative;
-  left: -30px;
-}
-
-
-.talent-mechanics { /*"We have talented mechanics*/
-  position: relative;
-  left: -200px;
-}
+  .talent-mechanics {
+    text-align: left;
+  }
   }
 
 
@@ -1076,23 +1071,23 @@
      */
      
     .about-banner { max-width: max-content; }
-  
+
     .about-banner,
     .about .section-text { margin-inline: auto; }
-  
+
     .about .section-text { max-width: 520px; }
 
-    .Justin {
-      position: relative;
-      top: -150px;
-      left: -120px;
-      
+    .slider {
+      max-width: 600px;
     }
-    
+
+    .Ozyn {
+      flex-direction: row;
+      gap: 50px;
+    }
+
     .about-content {
-      position: relative;
-      top: -930px;
-      left: 585px;
+      text-align: left;
     }
   
   
@@ -1537,438 +1532,16 @@
   
   }
 
-
-  @media (max-width: 556px) {
-
-    .dd {
-      position: relative;
-      left: 50px;
+  /* Responsive images for mobile devices */
+  @media (max-width: 767px) {
+    .dd img, .cummins-logo img, .Peterbuilt img {
+      max-width: 100%;
+      height: auto;
     }
 
-    .cummins-logo {
-      position: relative;
-      left: 10px;
+    .work-card .card-content {
+      width: 100%;
+      max-width: 100%;
+      padding: 20px 15px;
     }
-
-    .Peterbuilt {
-      position: relative;
-      left: 80px;
-    }
-
-    .about-us-title {
-      position: relative;
-      left: -15px;
-    }
-
-  }
-
-
-
-  @media (max-width: 296px) {  /*IPhone X*/
-
-    .dd {
-      position: relative;
-      left: -5px;
-    }
-
-    .cummins-logo {
-      position: relative;
-      left: -60px;
-    }
-
-    .Peterbuilt {
-      position: relative;
-      left: 10px;
-    }
-
-    .about-us-title {
-      position: relative;
-      left: -15px;
-    }
-
-  }
-
-  @media (max-width: 375px) { /*IPhone SE*/
-    .cummins-logo {
-      position: relative;
-      left: -20px;
-    }
-    .Peterbuilt {
-      left: 60px;
-    }
-
-  }
-
-
-  @media (max-width: 390px) { /*Iphone 12 Pro*/
-    .cummins-logo {
-      position: relative;
-      left: -10px;
-    }
-
-    .Peterbuilt {
-      position: relative;
-      left: 60px;
-    }
-  }
-
-
-  @media (min-width: 768px) and (max-width: 1023px) { /*Tablet Version*/
-    
-    .slider { 
-      width: 350px;  /* Max width for this container*/
-      height: 300px; /* Max height for this container*/
-      border-radius: 10px;
-      overflow: hidden;
-
-
-    }
-
-    .slide img {
-      width: 350px;    /* This width has the match the width of the .slider width in order to fill up properly and leave no space */
-      height: 300px;
-      object-fit: cover;
-
-    }
-
-    .navigation-manual {
-      position: absolute;
-      width: 350px; /*Must match .slider width in order for dots to be aligned */
-      margin-top: -180px; /*Makes the dots move up and down*/
-      display: flex;
-      justify-content: center;
-
-    }
-
-
-    .navigation-auto {
-      position:absolute;
-    display: flex;
-    width: 350px; /*must match slider width in order for dots to match*/
-    justify-content: center;
-    margin-top: 320px;
-
-    }
-
-    .about-content {
-      position: relative;
-      left: 340px;
-      top: -700px;
-      width: 380px;
-
-    }
-
-
-    .Justin {
-      left: -195px;
-      top: -50px;
-    }
-
-
-    .about-us-title {
-      position: relative;
-      left: -240px;
-
-  }
-    .talent-mechanics {
-    position: relative;
-    left: -240px;
-  }
-  #service-label {
-    position: relative;
-    left: -19px;
-  }
-
-  #work-services {
-    position: relative;
-    left: -10px;
-  }
-
-
-}
-
-
-@media(min-width:1024px) and (max-width:1199px) {
-  .slider { 
-    width: 400px;  /* Max width for this container*/
-    height: 300px; /* Max height for this container*/
-    border-radius: 10px;
-    overflow: hidden;
-
-
-  }
-
-  .slide img {
-    width: 400px;    /* This width has the match the width of the .slider width in order to fill up properly and leave no space */
-    height: 300px;
-    object-fit: cover;
-
-  }
-
-  .navigation-manual {
-    position: absolute;
-    width: 400px; /*Must match .slider width in order for dots to be aligned */
-    margin-top: -180px; /*Makes the dots move up and down*/
-    display: flex;
-    justify-content: center;
-
-  }
-
-
-  .navigation-auto {
-    position:absolute;
-  display: flex;
-  width: 400px; /*must match slider width in order for dots to match*/
-  justify-content: center;
-  margin-top: 320px;
-
-  }
-
-  .Justin {
-    position: relative;
-    left: -80px;
-  }
-
-  .about-content {
-    position: relative;
-    left: 450px;
-    top: -700px;
-    width: 500px;
-
-  }
-  
-  .red-truck {
-    position: relative;
-    width: 209px;
-    top: -150px;
-    left: 30px;
-  }
-}
-
-
-@media(min-width:1200px) and (max-width:1400px) {
-
-  .red-truck {
-    position: relative;
-    width: 260px;
-    top: 100px;
-    left: 50px;
-  }
-
-  .slider { 
-    width: 550px;  /* Max width for this container*/
-    height: 450px; /* Max height for this container*/
-    border-radius: 10px;
-    overflow: hidden;
-
-
-  }
-
-  .slide img {
-    width: 550px;    /* This width has the match the width of the .slider width in order to fill up properly and leave no space */
-    height: 450px;
-    object-fit: cover;
-
-  }
-
-  .navigation-manual {
-    position: absolute;
-    width: 550px; /*Must match .slider width in order for dots to be aligned */
-    margin-top: -30px; /*Makes the dots move up and down*/
-    display: flex;
-    justify-content: center;
-
-  }
-
-
-  .navigation-auto {
-    position:absolute;
-    display: flex;
-    width: 550px; /*must match slider width in order for dots to match*/
-    justify-content: center;
-    margin-top: 470px;
-
-  }
-
-  .about-content {
-    position: relative;
-    left: 520px;
-    top: -800px;
-    width: 600px;
-
-  }
-  .Justin {
-    left: -70px;
-    top: -140px;
-  }
-
-  
-}
-
-@media(min-width:1401px) and (max-width:1552px) {
-  .red-truck {
-    position: relative;
-    width: 310px;
-    left: 15px;
-    
-  }
-}
-
-
-
-@media(min-width:2560px) {
-  .about-content {
-    position: relative;
-    left: 520px;
-    top: -1400px;
-    width: 1000px;
-  }
-
-    .Justin {
-      left: -500px;
-      top: -400px;
-    }
-
-
-    .slider { 
-      width: 800px;  /* Max width for this container*/
-      height: 700px; /* Max height for this container*/
-      border-radius: 10px;
-      overflow: hidden;
-  
-  
-    }
-  
-    .slide img {
-      width: 800px;    /* This width has the match the width of the .slider width in order to fill up properly and leave no space */
-      height: 700px;
-      object-fit: cover;
-  
-    }
-  
-    .navigation-manual {
-      position: absolute;
-      width: 800px; /*Must match .slider width in order for dots to be aligned */
-      margin-top: 250px; /*Makes the dots move up and down*/
-      display: flex;
-      justify-content: center;
-  
-    }
-  
-  
-    .navigation-auto {
-      position:absolute;
-      display: flex;
-      width: 800px; /*must match slider width in order for dots to match*/
-      justify-content: center;
-      margin-top: 750px;
-  
-    }
-
-    .about-us-title {
-      position: relative;
-      left: 200px;
-    }
-
-
-
-  }
-
-  @media(min-height:900px) and (max-height:1036px) { /*IPAD*/
-    .about-content{
-      position: relative;
-      top: -850px;
-      width: 380px;
-    }
-    .Justin {
-      top: -200px;
-      left: -190px;
-    }
-
-    .slider { 
-      width: 350px;  /* Max width for this container*/
-      height: 400px; /* Max height for this container*/
-      border-radius: 10px;
-      overflow: hidden;
-  
-  
-    }
-  
-    .slide img {
-      width: 350px;    /* This width has the match the width of the .slider width in order to fill up properly and leave no space */
-      height: 400px;
-      object-fit: cover;
-  
-    }
-  
-    .navigation-manual {
-      position: absolute;
-      width: 350px; /*Must match .slider width in order for dots to be aligned */
-      margin-top: -80px; /*Makes the dots move up and down*/
-      display: flex;
-      justify-content: center;
-  
-    }
-  
-  
-    .navigation-auto {
-      position:absolute;
-      display: flex;
-      width: 350px; /*must match slider width in order for dots to match*/
-      justify-content: center;
-      margin-top: 420px;
-  
-    }
-
-    
-
-  }
-
-
-  @media(min-height:1037px) and (max-height:1500px) { /*IPAD*/
-    .about-content{
-      position: relative;
-      top: -1050px;
-      width: 380px;
-    }
-    .Justin {
-      top: -280px;
-      left: -190px;
-    }
-
-    .slider { 
-      width: 350px;  /* Max width for this container*/
-      height: 400px; /* Max height for this container*/
-      border-radius: 10px;
-      overflow: hidden;
-  
-  
-    }
-  
-    .slide img {
-      width: 350px;    /* This width has the match the width of the .slider width in order to fill up properly and leave no space */
-      height: 400px;
-      object-fit: cover;
-  
-    }
-  
-    .navigation-manual {
-      position: absolute;
-      width: 350px; /*Must match .slider width in order for dots to be aligned */
-      margin-top: -80px; /*Makes the dots move up and down*/
-      display: flex;
-      justify-content: center;
-  
-    }
-  
-  
-    .navigation-auto {
-      position:absolute;
-      display: flex;
-      width: 350px; /*must match slider width in order for dots to match*/
-      justify-content: center;
-      margin-top: 420px;
-  
-    }
-
   }
